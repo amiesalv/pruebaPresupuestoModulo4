@@ -1,0 +1,27 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*Estilos de form*/
+#presupuestoContainer {
+  background-color: #98ff96;
+  border: 3px solid;
+  border-color: #009929;
+  border-radius: 10px;
+  padding: 10px;
+}
+#gastoContainer {
+  background-color: #ff997f;
+  border: 3px solid;
+  border-color: #ff3936;
+  border-radius: 10px;
+  padding: 10px;
+}
+#tablaAbajo {
+  margin-top: 65px;
+}
+.form-control {
+  margin-bottom: 10px;
+}
+
+/*Estilos de table*/

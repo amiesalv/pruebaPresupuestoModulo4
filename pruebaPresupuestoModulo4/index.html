@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/37d4d46fc2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Prueba Presupuesto Modulo 4</title>
+  </head>
+  <body>
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <span class="navbar-text"> BIENVENIDO A TU PRESUPUESTO APP </span>
+      </div>
+    </nav>
+
+    <!--ventanas de presupuesto y gasto-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="p-3" id="presupuestoContainer">
+            <h5>Ingresa el presupuesto</h5>
+            <form id="presupuestoForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="presupuestoInput"
+                  placeholder="Ingrese la cantidad"
+                />
+              </div>
+              <button type="submit" class="btn btn-outline-success">
+                Calcular
+              </button>
+            </form>
+          </div>
+          <div class="p-3 mt-5" id="gastoContainer">
+            <h5>Añadir gasto</h5>
+            <form id="gastoForm">
+              <div class="form-group">
+                <label for="nombreGasto">Nombre del gasto:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="nombreGasto"
+                  placeholder="Ingrese el nombre del gasto"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cantidadGasto">Cantidad de gasto:</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cantidadGasto"
+                  placeholder="Ingrese la cantidad de gasto"
+                />
+              </div>
+              <button type="submit" class="btn btn-outline-danger">
+                Añadir gasto
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row">
+            <div class="col-md-12">
+              <table class="table" id="tablaArriba">
+                <thead>
+                  <tr>
+                    <th>Presupuesto</th>
+                    <th>Gasto</th>
+                    <th>Saldo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="presupuesto">$-</td>
+                    <td id="gasto">$-</td>
+                    <td id="saldo">$-</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-12 mt-5">
+              <table class="table" id="tablaAbajo">
+                <thead>
+                  <tr>
+                    <th>Gastos</th>
+                    <th>Valor</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody id="gastosTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+      integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
